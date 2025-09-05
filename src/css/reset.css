@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Caixa STD';
+    src: url(../fonts/CAIXAStd-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caixa STD', 'Poppins', sans-serif;
+}
+
+input, textarea, button {
+    outline: none;
+    border: none;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    border: none;
+}

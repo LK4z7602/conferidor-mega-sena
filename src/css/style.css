@@ -1,0 +1,84 @@
+:root {
+    --main-color: rgb(32, 152, 105);
+    --active-color: rgb(41, 194, 130);
+}
+
+body {
+    background-color: rgba(43, 161, 68, 0.171);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100dvh;
+    margin-block: 60px;
+}
+.logo {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+}
+
+section {
+    background-color: rgb(130, 179, 157);
+    width: 65%;
+    min-height: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.titulo {
+    margin-block: 25px;
+    font-size: 34px;
+    color: #fff;
+    text-align: center;
+}
+
+.otp {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.otp input {
+    color: #fff;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 36px;
+    transition: 0.2s ease-in-out;
+}
+
+.otp input:focus {
+    background-color: var(--active-color);
+}
+
+.serach-container{
+    margin-top: 15px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.serach-container:hover {
+    background-color: var(--active-color);
+    box-shadow: rgba(41, 194, 130, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.serach {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
