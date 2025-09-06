@@ -69,6 +69,19 @@ export function initOTP(containerId, onComplete) {
       if (nextEmpty !== -1) inputs[nextEmpty].focus();
       else inputs[inputs.length - 1].focus();
     });
+
+    // Adiciona evento Enter apenas no último input
+    if (idx === inputs.length - 1) {
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          const code = getOTP();
+          // Só permite se o último campo tiver 2 dígitos e todos preenchidos
+          if (input.value.length === 2 && code.length === inputs.length && !code.includes("")) {
+            onComplete?.(code);
+          }
+        }
+      });
+    }
   });
 
   return {

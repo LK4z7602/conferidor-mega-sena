@@ -3,6 +3,21 @@
     --active-color: rgb(41, 194, 130);
 }
 
+@font-face {
+    font-family: 'Caixa STD Light';
+    src: url(../fonts/CAIXAStd-Book.ttf);
+}
+
+@font-face {
+    font-family: 'Caixa STD Regular';
+    src: url(../fonts/CAIXAStd-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Caixa STD SemiBold';
+    src: url(../fonts/CAIXAStd-SemiBold.ttf);
+}
+
 body {
     background-color: rgba(43, 161, 68, 0.171);
 }
@@ -12,12 +27,12 @@ main {
     align-items: center;
     flex-direction: column;
     height: 100dvh;
-    margin-block: 60px;
 }
+
 .logo {
     width: 130px;
     height: 130px;
-    margin-bottom: 50px;
+    margin-block: 50px;
 }
 
 section {
@@ -59,7 +74,7 @@ section {
     background-color: var(--active-color);
 }
 
-.serach-container{
+.serach-container {
     margin-top: 15px;
     background-color: var(--main-color);
     width: 50px;
@@ -81,4 +96,43 @@ section {
     font-size: 24px;
     color: #fff;
     text-align: center;
+}
+
+.result-data {
+    margin-block: 25px;
+    background-color: var(--main-color);
+    width: 60%;
+    min-height: 160px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+strong {
+    font-family: 'Caixa STD SemiBold', sans-serif;
+}
+
+.result-data p {
+    color: #fff;
+    font-family: 'Caixa STD Light', sans-serif;
+    font-size: 20px;
+}
+
+.result-data span {
+    color: #fff;
+    font-family: 'Caixa STD SemiBold', sans-serif;
+    font-size: 16px;
+}
+
+.result-data .ganhou {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.result-data .acumulado {
+    font-size: 18px;
 }
